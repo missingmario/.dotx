@@ -21,6 +21,8 @@ in
   home.file = {
     ".config/nvim".source = config.lib.file.mkOutOfStoreSymlink "${vars.dotxDir}/nvim";
     ".config/ghostty".source = config.lib.file.mkOutOfStoreSymlink "${vars.dotxDir}/ghostty";
+
+    ".config/git/ignore".source = config.lib.file.mkOutOfStoreSymlink "${vars.dotxDir}/git/ignore";
   };
 
   programs.git = {
@@ -31,6 +33,7 @@ in
 
     extraConfig = {
       init.defaultBranch = "main";
+      push.autoSetupRemote = true;
     };
   };
 
