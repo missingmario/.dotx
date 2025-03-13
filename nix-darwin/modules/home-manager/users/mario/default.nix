@@ -34,6 +34,14 @@ in
     };
   };
 
+  programs.gh = {
+    enable = true;
+
+    gitCredentialHelper = [
+      "https://github.com"
+    ];
+  };
+
   programs.ssh = {
     enable = true;
   };
