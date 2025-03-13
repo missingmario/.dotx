@@ -1,0 +1,15 @@
+theme = catppuccin-mocha
+
+font-size = 20
+
+mouse-hide-while-typing
+
+command = /run/current-system/sw/bin/fish
+# command = /usr/bin/env fish
+
+#
+# Icon customization
+#
+
+macos-titlebar-style = transparent
+macos-icon = xray
