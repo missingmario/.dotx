@@ -37,9 +37,10 @@ in
   programs.gh = {
     enable = true;
 
-    gitCredentialHelper = [
-      "https://github.com"
-    ];
+    gitCredentialHelper = {
+      enable = true;
+      hosts = ["https://github.com"];
+    };
   };
 
   programs.ssh = {
