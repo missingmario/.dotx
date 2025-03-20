@@ -4,18 +4,29 @@
   homebrew = {
     enable = true;
 
-    casks = [ 
-      "ghostty"
-      "iina"
-      "keka"
-      "1password"
-
-      "visual-studio-code"
-
-      #"flutter"
+    taps = [
+      "homebrew/core"
+      "homebrew/cask"
     ];
 
-    onActivation.cleanup = "zap";
+    casks = [ 
+      "ghostty"
+
+      "rectangle"
+      "iina"
+      "keka"
+
+      "1password"
+
+      "google-chrome"
+
+      "visual-studio-code"
+    ];
+
+    onActivation = {
+      cleanup = "zap";
+      upgrade = true;
+    };
   };
 
 }
