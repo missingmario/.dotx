@@ -4,12 +4,6 @@
   homebrew = {
     enable = true;
 
-    taps = [
-      "homebrew/core"
-      "homebrew/cask"
-      "homebrew/bundle"
-    ];
-
     casks = [ 
       "ghostty"
       "iina"
@@ -18,7 +12,7 @@
 
       "visual-studio-code"
 
-      "flutter"
+      #"flutter"
     ];
 
     onActivation.cleanup = "zap";

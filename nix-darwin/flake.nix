@@ -52,18 +52,18 @@
         hostPlatform = "aarch64-darwin";
       };
     };
-    homebrewConfiguration = { pkgs, ... }: {
+  homebrewConfiguration = { pkgs, ... }: {
     nix-homebrew = {
       enable = true;
 
       user = "mario";
 
-      # mutableTaps = false;
-      #taps = {
-      #  "homebrew/homebrew-core" = tap-core;
-      #  "homebrew/homebrew-cask" = tap-cask;
-      #  "homebrew/homebrew-bundle" = tap-bundle;
-      #};
+      mutableTaps = false;
+      taps = {
+        "homebrew/homebrew-core" = tap-core;
+        "homebrew/homebrew-cask" = tap-cask;
+        "homebrew/homebrew-bundle" = tap-bundle;
+      };
     };
   };
   in
