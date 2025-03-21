@@ -15,12 +15,14 @@
       "rectangle"
       "iina"
       "keka"
+      "latest"
 
       "1password"
 
       "google-chrome"
 
       "visual-studio-code"
+      "android-studio"
     ];
 
     onActivation = {

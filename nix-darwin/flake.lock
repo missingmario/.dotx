@@ -171,11 +171,11 @@
     "tap-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1742512279,
-        "narHash": "sha256-Ec6PMdSor18rU8JTrUhX2Q1znVfLjylTMGjRPOtkxJ0=",
+        "lastModified": 1742515593,
+        "narHash": "sha256-ljxh/sMSN2w+WCH52cxKl2TZLX03kvbAGxthIh4/fko=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "673af31a059ff27b1c999f91eaf4ce4f10730998",
+        "rev": "64a4e779dd3d4b25577766085b21e022767fe4b6",
         "type": "github"
       },
       "original": {
