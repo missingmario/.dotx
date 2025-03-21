@@ -26,17 +26,18 @@
   };
 
   outputs =
-    inputs@{
+    {
       self,
-      nixpkgs,
       nix-darwin,
       nix-homebrew,
       nix-homebrew-taps,
       home-manager,
+      ...
     }:
     let
+      system = "aarch64-darwin";
       darwinConfiguration =
-        { pkgs, ... }:
+        { ... }:
         {
           nix.settings = {
             experimental-features = "nix-command flakes";
@@ -48,22 +49,17 @@
           };
 
           nixpkgs = {
-            hostPlatform = "aarch64-darwin";
+            hostPlatform = system;
           };
         };
       homebrewConfiguration =
-        { pkgs, ... }:
+        { ... }:
         {
           nix-homebrew = {
             enable = true;
-
             user = "mario";
-
             taps = nix-homebrew-taps.taps;
-
             mutableTaps = true;
-
-            autoMigrate = true;
           };
         };
     in

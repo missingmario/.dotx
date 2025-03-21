@@ -17,6 +17,12 @@ in
     pkgs.tree
 
     pkgs.nixfmt-rfc-style
+
+    pkgs.lua-language-server
+    pkgs.nixd
+
+    pkgs.zig
+    pkgs.zls
   ];
 
   home.file = {
