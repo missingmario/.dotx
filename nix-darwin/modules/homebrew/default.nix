@@ -1,6 +1,5 @@
 { pkgs, ... }:
 {
-
   homebrew = {
     enable = true;
 
@@ -9,7 +8,7 @@
       "homebrew/cask"
     ];
 
-    casks = [ 
+    casks = [
       "ghostty"
 
       "rectangle"
@@ -30,5 +29,4 @@
       upgrade = true;
     };
   };
-
 }

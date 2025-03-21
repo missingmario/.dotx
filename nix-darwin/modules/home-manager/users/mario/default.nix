@@ -1,9 +1,9 @@
 { config, pkgs, ... }:
-let 
-vars = {
-  homeDir = "/Users/mario";
-  dotxDir = "/Users/mario/.dotx";
-}; 
+let
+  vars = {
+    homeDir = "/Users/mario";
+    dotxDir = "/Users/mario/.dotx";
+  };
 in
 {
   home = {
@@ -14,8 +14,9 @@ in
   };
 
   home.packages = [
-    pkgs.chezmoi
-      pkgs.tree
+    pkgs.tree
+
+    pkgs.nixfmt-rfc-style
   ];
 
   home.file = {
@@ -42,7 +43,7 @@ in
 
     gitCredentialHelper = {
       enable = true;
-      hosts = ["https://github.com"];
+      hosts = [ "https://github.com" ];
     };
   };
 

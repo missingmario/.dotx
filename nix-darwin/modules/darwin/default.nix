@@ -1,6 +1,5 @@
 { pkgs, ... }:
 {
-
   programs.fish = {
     enable = true;
   };
@@ -37,7 +36,5 @@
       KeyRepeat = 1;
       InitialKeyRepeat = 10;
     };
-
   };
-
 }
