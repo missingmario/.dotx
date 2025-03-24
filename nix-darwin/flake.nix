@@ -12,7 +12,7 @@
     };
 
     nix-homebrew = {
-      url = "github:missingmario/nix-homebrew/brew-4.4.25";
+      url = "github:missingmario/nix-homebrew";
     };
 
     nix-homebrew-taps = {
